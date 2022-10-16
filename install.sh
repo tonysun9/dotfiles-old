@@ -32,7 +32,11 @@ zshrc() {
     echo "-----------------------------------------------------------"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     echo "==========================================================="
-    echo "             import zshrc                                  "
+    echo "                  installing starship                      "
+    echo "-----------------------------------------------------------"
+    curl -sS https://starship.rs/install.sh | sh
+    echo "==========================================================="
+    echo "                    import zshrc                           "
     echo "-----------------------------------------------------------"
     cat .zshrc > $HOME/.zshrc
 }

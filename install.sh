@@ -18,7 +18,9 @@ sudo apt-get install -y \
   wget \
   unzip \
   apt-transport-https \
-  lsb-release 
+  lsb-release \
+  powerline \
+  fonts-powerline
 
 zshrc() {
     echo "==========================================================="
